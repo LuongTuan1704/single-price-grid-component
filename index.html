@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <style>
+    *{
+      margin: 0;padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      font-size: 16px;
+      line-height: 1;
+      background-color: hsl(204, 43%, 93%);
+      padding: 0 15px;
+      font-family: 'Karla', sans-serif;
+    }
+    .container{
+      max-width:644px;
+      margin:100px auto;
+      border-radius: 7px;
+      box-shadow:0px 7px 10px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      overflow: hidden;
+    }
+    .panel-top{
+      padding: 35px;
+    }
+    .panel-top h2{
+      margin-bottom:22px;
+      color: hsl(179, 62%, 43%);
+      font-weight: 700;
+    }
+    .panel-top h3{
+      color: hsl(71, 73%, 54%);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .panel-top p{
+      line-height: 1.5;
+      font-weight: 400;
+      color: hsl(218, 22%, 67%);
+      text-align: left;
+    }
+    .panel-bottom{
+      display: flex;
+      color: hsl(204, 43%, 93%);    
+    }
+    .panel-bottom h2{
+      margin-bottom: 15px;
+      color: #fff;
+    }
+    .panel-bottom p{
+      line-height: 1.2;
+    }
+    .panel-left{
+      padding: 35px;
+      flex: 0 0 50%;
+      background-color: hsl(179, 62%, 43%);
+    }
+    .panel-left span{
+      font-size: 26px;
+      color: #fff;
+    }
+    .panel-left p{
+      margin-bottom: 14px;
+    }
+    .panel-right{
+      padding: 35px;
+      flex: 0 0 50%;
+      background-color:  #4ABEBD;
+    }
+    .btn-sign-up{
+      margin-top: 35px;
+    }
+    .btn{
+      background-color: #BFDF32;
+      text-decoration: none;
+      color: #fff;
+      font-size: 22px;
+      display: block;
+      text-align: center;
+      padding: 12px 0;
+      border-radius: 7px;
+    }
+    @media (max-width: 375px){
+      .panel-bottom{
+        flex-direction: column;
+      }
+      .panel-left{
+        width: 100%;
+      }
+      .panel-right{
+        width: 100%;
+      }
+    }
+    .attribution { font-size: 11px; text-align: center; margin: 25px 0;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="panel-top">
+      <h2>Join our community</h2>
+      <h3>30-day, hassle-free money back guarantee</h3>
+      <p>
+        Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+    <div class="panel-bottom">
+        <div class="panel-left">
+          <h2>Monthly Subscription</h2>
+          <p><span>&dollar; 29</span>  per month</p>
+          <p>Full access for less than &dollar;1 a day</p>
+          <div class="btn-sign-up">
+            <a href="#" class="btn">
+              Sign Up
+            </a>
+          </div>
+        </div>
+        <div class="panel-right">
+          <h2> Why Us</h2>
+          <p>
+            Tutorials by industry experts <br>
+            Peer &amp; expert code review  <br>
+            Coding exercises  <br>
+            Access to our GitHub repos <br>
+            Community forum <br>
+            Flashcard decks <br>
+            New videos every week
+          </p>
+        </div>
+    </div>
+  </div>
+ 
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Luong tuan</a>.
+    </p>
+  </footer>
+</body>
+</html>
